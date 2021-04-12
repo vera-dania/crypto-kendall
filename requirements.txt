@@ -1,3 +1,0 @@
-pymannkendall
-cryptocompare
-matplotlib
