@@ -7,10 +7,10 @@ import pymannkendall as mk
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--granularity', '-g', type=str, default='minute')
-    parser.add_argument('--num_points', '-n', type=int, default=60*24)
-    parser.add_argument('--mode', '-m', type=str, default='close')
-    parser.add_argument('--currency', '-c', type=str, default='CAD')
+    parser.add_argument('--granularity', '-g', type=str, default='minute', help='one of [day,hour,minute], the granularity of the x-axis. default=minute')
+    parser.add_argument('--num_points', '-n', type=int, default=60*24, help='number of points to sample from historic prices (e.g. number of days). default=1440')
+    parser.add_argument('--mode', '-m', type=str, default='close', help='the cryptocompare price attribute to use (e.g. open or close). default=close')
+    parser.add_argument('--currency', '-c', type=str, default='CAD', help='currency (e.g. CAD, USD). default=CAD')
 
     args = parser.parse_args()
 
