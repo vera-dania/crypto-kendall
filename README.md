@@ -1,5 +1,5 @@
 # crypto-kendall
-Runs Mann-Kendall trend detection and shows plots of BTC/ETH using cryptocompare, pymannkendall, and matplotlib
+Runs Mann-Kendall trend detection and shows plots of BTC/ETH using `cryptocompare`, `pymannkendall`, and `matplotlib`
 
 ```
 usage: crypto_kendall [-h] [--granularity GRANULARITY]
